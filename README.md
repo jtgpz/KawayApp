@@ -15,5 +15,5 @@ In detailed construct, the specific objectives to achieve the general goal:
 -	[ ] FSL Flashcards
 
 ### Filipino Sign Language Recognition and Translator Module
-- Tools to be used for the development of the FSL Recognition and Translator Module:
+##### Tools to be used for the development of the FSL Recognition and Translator Module:
 - Visual Studio Code or Jupyter Notebook
