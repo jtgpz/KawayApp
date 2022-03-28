@@ -6,18 +6,20 @@ In detailed construct, the specific objectives to achieve the general goal:
 <br>
 ## Develop a Video Collaboration Web Application with the following features:
 <br>
-o	FSL to Text
+-	FSL to Text
 <br>
-o	Text to FSL
+-	Text to FSL
 <br>
-o	Text to Speech
+-	Text to Speech
 <br>
 
 ## Develop an E-Learning module to guide non-signers learn Filipino Sign Language with the following features:
 <br>
-o	Fingerspelling Dictionary
+-	Fingerspelling Dictionary
 <br>
-o	Video Demonstrations with Tutorials
+-	Video Demonstrations with Tutorials
 <br>
-o	FSL Flashcards
+-	FSL Flashcards
 <br>
+
+### Filipino Sign Language Recognition and Translator Module
