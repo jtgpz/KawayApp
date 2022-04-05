@@ -14,6 +14,13 @@ In detailed construct, the specific objectives to achieve the general goal:
 -	[ ] Video Demonstrations with Tutorials
 -	[ ] FSL Flashcards
 
-### Filipino Sign Language Recognition and Translator Module
+### Filipino Sign Language Recognition and Translator Module using LTSM Model 
 ##### Tools to be used for the development of the FSL Recognition and Translator Module:
+Code Editor
 - Visual Studio Code or Jupyter Notebook
+
+
+
+
+
+### Phase 1: Data Creation 
