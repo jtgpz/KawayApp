@@ -1,9 +1,20 @@
 # KawayApp: Filipino Video Collaboration Web Application for the Deaf and Mute
-Main repository for KawayApp
+About this project
 
-This project is a video chat application that uses sign language recognition to create a real-time conversation.
+KawayApp is a video chat application that aims to create an effective online environment to communicate with the deaf/mute. 
+
+KawayApp utilizes machine learning using Computer Vision and Action Detection model.
 In detailed construct, the specific objectives to achieve the general goal:
 <br>
+
+##### Frameworks used to build
+1. NextJS
+2. NodeJS
+3. ExpressJS
+4. WebRTC
+5. Firebase
+
+
 ##### 1. Develop a Video Collaboration Web Application with the following features:
 -	[ ] FSL to Text
 -	[ ] Text to FSL
