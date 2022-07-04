@@ -7,7 +7,7 @@ KawayApp utilizes machine learning using Computer Vision and Action Detection mo
 In detailed construct, the specific objectives to achieve the general goal:
 <br>
 
-##### Frameworks used to build
+##### Frameworks to be used
 1. NextJS
 2. NodeJS
 3. ExpressJS
