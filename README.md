@@ -32,6 +32,6 @@ Code Editor
 
 
 
+Update 7.5.2022
+- We're going to proceed to create the video chat application and the E-Learning module. We're going to put off the SL module for now.
 
-
-### Phase 1: Data Creation 
