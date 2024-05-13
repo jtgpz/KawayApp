@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opencv JS</title>
+</head>
+<body>
+    <video id="cam_input" height="480" width="640"></video>
+    <canvas id="canvas_output"></canvas>
+</body>
+<script type="text/JavaScript">
+async function loadModel() {
+        model = undefined;
+        model = await tf.loadLayersModel('model.json');
+
+        
+    }
+function openCvReady() {
+  cv['onRuntimeInitialized']=()=>{
+    let video = document.getElementById("cam_input"); // video is the id of video tag
+    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    .then(function(stream) {
+        video.srcObject = stream;
+        video.play();
+    })
+    .catch(function(err) {
+        console.log("An error occurred! " + err);
+    });
+
+    let src = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+    let dst = new cv.Mat(video.height, video.width, cv.CV_8UC1);
+    let cap = new cv.VideoCapture(cam_input);
+    // let utils = new Utils('errorMessage');
+
+    const FPS = 30;
+    function processVideo() {
+        let begin = Date.now();
+        cap.read(src);
+        cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY, 0);
+        cv.imshow("canvas_output", dst);
+        // schedule next one.
+        let delay = 1000/FPS - (Date.now() - begin);
+        setTimeout(processVideo, delay);
+    }
+    // schedule first one.
+    setTimeout(processVideo, 0);
+  };
+  
+}
+
+</script>
+<script async src="js/opencv.js" onload="openCvReady();"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js" onload="loadModel();" type="text/Javascript">
+</script>
+</html>
